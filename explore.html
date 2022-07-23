@@ -1,36 +1,514 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
     <title>精选 - 安可达</title>
-    
-    <link rel="stylesheet" href="//www.ancoda.com/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//www.ancoda.com/assets/css/animate.css">
-    <link rel="stylesheet" href="//www.ancoda.com/assets/css/style.css">
-    <script src="//www.ancoda.com/assets/js/hm.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="安可达,Ancoda,安可达官网,Ancoda官网,安可达社区,安可达app,安可达小程序">
+    <meta name="Description" content="安可达心的向往。用心感触美，探索新视界，是我们不变的初心。通过短视频、图文等形式记录下属于自己的独家记忆，并基于兴趣话题分享心得、美食和趣事，让彼此成为聆听的知己。"/>
+    <link rel="icon" href="/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="/assets/css/common.css">
     <script>
         var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?e9ca8e65b7bbe9f792ccb5e1e14400ab";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cf62cebbe5d09675229d658948e9cf67";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
         })();
     </script>
+    <script type='text/javascript' src='./assets/js/jquery-2.1.4.min.js'></script>
+    <script type='text/javascript' src='./assets/js/common.js'></script>
+    <link rel="stylesheet" href="/assets/css/explore.css">
 </head>
-<body class="gray-bg">
-    <div class="middle-box text-center animated fadeInDown">
-        <h1></h1>
-        <h3 class="font-bold"></h3>
-        <div class="error-desc">
-            您要查找的页面丢失了。尝试检查 URL 是否有错误，然后按浏览器上的刷新按钮或尝试在我们的应用中查找其他内容
-            <a href="javascript:index()">返回首页</a>
+<body>
+<div class="ancoda-pc">
+
+    <div class="header flex-between">
+        <div class="logo">
+            <a href="/">安可达</a>
+        </div>
+        <nav class="site-nav">
+            <ul>
+                <a href="/index.html">
+                    <li id="menu_1">首页</li>
+                </a>
+                <a href="/explore.html">
+                    <li id="menu_2">精选</li>
+                </a>
+                <a href="/about.html">
+                    <li id="menu_4">关于</li>
+                </a>
+                <a class="translation-wrapper">
+                    <li class="navigation-item" onclick="i18n('CN')"> 中文(简)
+                        <img src="./images/navbar_under.png" class="arrow">
+                    </li>
+                    <div class="drop-up-wrapper">
+                        <div class="drop-up-content" onclick="i18n('UN')">
+                            <span>English(US)</span>
+                        </div>
+                    </div>
+                </a>
+            </ul>
+        </nav>
+    </div>
+
+    <script>nav('2');</script>
+
+    <div class="list-box">
+        <div class="fall-container">
+
+            <div class="fall-item">
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723001.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">第一次和你这么正式的拍了合影，在你即将11岁的时候。陪伴了我三分之一的人生，和我一起度过了我人生中的各种起伏，无论在外我多么的坚强，刚烈，只要和你在一起，就立刻变得柔软无比。 我们有着同样的生肖，同样的星座。这是多么奇妙的缘分～～很多人都说我 ...</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723001.jpg">
+                                <div class="user-name">当当今天饿了么</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">1266</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723002.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">我个人推测他是在这里等待时机抽我的抽纸， 由于我一直盯着他没法得逞，最终只能用睡觉来掩饰尴尬。</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723002.jpg">
+                                <div class="user-name">纳尔逊羊</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">0</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="data-type-image" src="./images/video.png">
+                        <img class="card-img" src="./images/explore/c20220723003.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">农场里的小动物们，就是这么天真烂漫，你喜欢这群小动物吗？</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723003.jpg">
+                                <div class="user-name">泡泡茉莉酱</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">0</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723004.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">毛绒绒</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723004.jpg">
+                                <div class="user-name">老牛爱带娃</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">1</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fall-item">
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="data-type-image" src="./images/video.png">
+                        <img class="card-img" src="./images/explore/c20220723005.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">冬天来了，外套里需要一个小暖袋</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723005.jpg">
+                                <div class="user-name">球球小墩墩</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">6</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723006.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">泡泡与猫咪
+                            这是什么神仙的东西
+                            抓不住好着急</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723006.jpg">
+                                <div class="user-name">闻奕青年</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">0</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723007.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">圣诞【宠粉福利】 每次晒甜心小公主的衣服用品，你们都夸好漂亮，萌主这就来宠粉啦，关注我➕转发这条微博，12月15号送 同款⭐2个金边猫碗⭐3个猫外出包⭐5件圣诞披风！精致的喵生无需羡慕，你家主子也可以拥有。家里没主子的宝子们也别担心，包包和猫碗自己也可以用哦，超漂亮der ...</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723007.jpg">
+                                <div class="user-name">郭知和予</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">41</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723008.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">心有猛虎，嗷呜～🐯</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723008.jpg">
+                                <div class="user-name">我叫小豆浆</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">29</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="fall-item">
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723009.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">你的围脖🧣一定很暖和吧？😄</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723009.jpg">
+                                <div class="user-name">微醺～妮娅</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">11</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="data-type-image" src="./images/video.png">
+                        <img class="card-img" src="./images/explore/c20220723010.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">这是我家的甜不辣组合</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723010.jpg">
+                                <div class="user-name">今天发财了</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">28</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="data-type-image" src="./images/video.png">
+                        <img class="card-img" src="./images/explore/c20220723011.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">谁帮我看看这只猫怎么了，成天喜欢吸脚气！</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723011.jpg">
+                                <div class="user-name">Freya飞呀</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">0</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723012.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">拍下一张美丽的宝贝，值得发微博分享美丽。</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723012.jpg">
+                                <div class="user-name">七点子</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">37</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="fall-item">
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723013.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">捕捉一只小可怜♥︎</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723013.jpg">
+                                <div class="user-name">抹茶MaMa菲儿菲儿</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">2</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723014.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">北方猫过冬天的正确打开方式</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723014.jpg">
+                                <div class="user-name">傲娇的天秤座ly</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">18</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723015.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">养了一只猫。能不能缓解孤独我不知道，毕竟一个人在外也生活小几年了。但养了它之后，除了让我变得忙碌，也让我有了牵绊。 以前的我下了班回家就瘫痪在了沙发上，可是现在我还得拖着疲惫的身体去铲屎，喂粮，倒水，我不怕自己饿着，我就怕它饿着。 以前到了假期 ...</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723015.jpg">
+                                <div class="user-name">小小小小仙女</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">4</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class="media ">
+                        <img class="card-img" src="./images/explore/c20220723016.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">今日份沙雕毛</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723016.jpg">
+                                <div class="user-name">苏别</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">1</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="fall-item">
+
+                <div class="item-masonry" onclick="more()">
+                    <div class=" media ">
+                        <img class="data-type-image" src="./images/video.png">
+                        <img class="card-img" src="./images/explore/c20220723017.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">猫咪和它的小娇妻，相爱相杀</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723017.jpg">
+                                <div class="user-name">阳光少年</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">2</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class=" media ">
+                        <img class="data-type-image" src="./images/video.png">
+                        <img class="card-img" src="./images/explore/c20220723018.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">舔狗我是经常见到，但是这样的舔猫还是第一次见，小猫：略略略</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723018.jpg">
+                                <div class="user-name">阿巴阿巴</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">3</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class=" media ">
+                        <img class="card-img" src="./images/explore/c20220723019.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">九图可爱攻击</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723019.jpg">
+                                <div class="user-name">打了两个嗝</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">3</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-masonry" onclick="more()">
+                    <div class=" media ">
+                        <img class="card-img" src="./images/explore/c20220723020.jpg">
+                    </div>
+                    <div class="margin-top-xs">
+                        <h3 class="title">Wink～🌟</h3>
+                        <div class="user-view flex-between">
+                            <div class="flex-start">
+                                <img class="header-image" src="./images/explore/h20220723020.jpg">
+                                <div class="user-name">王温柔</div>
+                            </div>
+                            <div class="flex-start">
+                                <img class="endorse" src="./images/endorse.png">
+                                <text class="praise-count">2</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="more" onclick="more()">加载更多</div>
+
+        <div id="qr-code" class="pop-rover-containe pop-over" style="display: none;">
+            <div class="download-app">
+                <div class="image-box">
+                    <img src="./images/applet_code.jpg">
+                </div>
+                <p>扫码打开Ancoda安可达小程序</p>
+                <p>与安可达一起探索新视界</p>
+                <div class="close">关闭</div>
+            </div>
+        </div>
+        <script>
+            function more() {
+                document.getElementById("qr-code").style="table-row";
+            }
+            var close=document.getElementsByClassName("close");
+            close[0].onclick=function(){
+                document.getElementById("qr-code").style="display: none";
+            }
+        </script>
+    </div>
+
+    <div class="footer footer light-theme">
+        <div class="bottom">
+            <div class="info">
+                <span class="line" title="版权">
+                    安可达版权所有 &nbsp; COPYRIGHT © 2019 - 2021 ANCODA &nbsp;ALL RIGHTS RESERVED.
+                    <a href="http://beian.miit.gov.cn/" target="_blank">湘ICP备2020018131号-1</a>
+                </span>
+                <span class="line">
+                    <a title="免责色明"> 站点声明：本站转载作品版权归原作者及来源网站所有，原创内容作品版权归作者所有，任何内容转载、商业用途等均须联系原作者并注明来源。 </a>
+                </span>
+            </div>
         </div>
     </div>
-    <script inline="javascript">
-      var ctx = "/"
-      function index() {
-          window.parent.frames.location.href = ctx ;
-      }
-    </script>
+
+</div>
+</body>
+</html>
 
 
-</body></html>
