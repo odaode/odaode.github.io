@@ -1,0 +1,200 @@
+.header{
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.header .logo a {
+    color: #090808;
+}
+ul a li {
+    color: #090808;
+}
+ul a li::after {
+    background: #090808;
+}
+
+
+.list-box {
+    margin-top: 8%;
+    padding: 0px 15%;
+}
+
+.fall-container {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+
+.fall-item {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 1%;
+    width: 20%;
+}
+
+.item-masonry {
+    position: relative;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.item-masonry:hover:after {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,2,4,.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    content: "";
+}
+
+.media {
+    position: relative;
+    background: rgba(245, 246, 247, 1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img {
+    display: block;
+}
+
+.margin-top-xs {
+    margin: 10px 15px;
+}
+
+.title {
+    color: #333;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    min-height: 20px;
+    max-height: 50px;
+    width: 152px;
+    /* 内容过长显示两行，多余为省略号 */
+    text-overflow: ellipsis;
+    /*设置隐藏部分为省略号*/
+    overflow: hidden;
+    /*设置隐藏*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /*设置显示行数，此处为2行，可设置其他数字*/
+    -webkit-box-orient: vertical;
+}
+.user-view{
+    margin-top:12px;
+}
+.header-image{
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+.user-name{
+    margin-left:10px;
+    width: 91px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: #8a8a8a;
+}
+img {
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+.endorse{
+    width:15px;
+    height:13px;
+}
+.praise-count{
+    font-size: 12px;
+    margin-left: 8px;
+    color: #8a8a8a;
+}
+
+.data-type-image{
+    z-index: 9;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    opacity:0.8;
+}
+.more{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    color: red;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+
+/*小程序下载弹窗样式*/
+.pop-rover-containe{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.4);
+}
+.pop-over{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.download-app{
+    width: 280px;
+    height: 271px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.download-app p{
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin: 0 0 3px;
+}
+.image-box{
+    margin-top: 20px;
+    width: 128px;
+    height: 128px;
+    border-radius: 5px;
+}
+.close{
+    cursor: pointer;
+    width: 100%;
+    color: #5b92e1;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    margin: 18px 0 0;
+}
