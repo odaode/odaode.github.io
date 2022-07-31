@@ -14,6 +14,7 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+    <link rel="stylesheet" href="/assets/css/common.css">
     <style>
         /*以下为CSS样式设置*/
         /*为了代码简洁使用通配符，实际开发不建议使用*/
@@ -24,28 +25,28 @@
         body {
             background-image:linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
         }
-        .ofixed{
+        .ancodaindex{
             position: fixed;
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
             background-color: #00ff0f;
             top: 30%;
-            opacity: 0.1;
-            border-radius: 14px;
+            opacity: 0.5;
+            border-radius: 25px;
             text-align: center;
             line-height: 30px;
             transition: 1s;
             font-size: 12px;
 
         }
-        .ofixed div{
+        .ancodaindex div{
             display: none;
         }
-        .ofixed:hover{
+        .ancodaindex:hover{
             opacity: 0.8;
             width: 180px;
         }
-        .ofixed:hover div{
+        .ancodaindex:hover div{
             display: block;
         }
         .content {
@@ -122,9 +123,13 @@
 </head>
 
 <body>
-    <div class="ofixed">
-        <div>这是一个隐藏的彩蛋</div>
+
+
+    <div class="ancodaindex">
+        <div style="margin-top: 5%; ">
+            <a href="//www.ancoda.com" style="text-decoration: none;">安可达</a></div>
     </div>
+    
     <div class="content">
 
         <input type="text" id="newhours" maxlength="2">
