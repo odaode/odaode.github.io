@@ -1,0 +1,21 @@
+.header{
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.header .logo a {
+    color: #090808;
+}
+ul a li {
+    color: #090808;
+}
+ul a li::after {
+    background: #090808;
+}
+
+
+.content {
+    margin-top: 8%;
+    padding: 0px 10%;
+}
