@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>例子 - 安可达</title>
-    <meta name="keywords" content="JS,Java">
-    <meta name="Description" content="參考案例，例子，Demo"/>
+    <title>案例 - 安可达</title>
+    <meta name="keywords" content="安可达,Ancoda,安可达官网,Ancoda官网,安可达社区,安可达app,安可达小程序">
+    <meta name="Description" content="安可达心的向往。用心感触美，探索新视界，是我们不变的初心。通过短视频、图文等形式记录下属于自己的独家记忆，并基于兴趣话题分享心得、美食和趣事，让彼此成为聆听的知己。"/>
     <link rel="icon" href="/favicon.ico">
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="/assets/css/common.css">
     <script>
         var _hmt = _hmt || [];
         (function () {
@@ -15,10 +16,47 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+    <link rel="stylesheet" href="/assets/css/index.css">
+
 </head>
 <body>
-    <div style="text-align: center">
-        <a href="/demo/clock.html">js 计时器Demo</a>
+<div class="ancoda-pc">
+    <div class="header flex-between">
+        <div class="logo">
+            <a href="/">安可达</a>
+        </div>
+        <nav class="site-nav">
+            <ul>
+                <a href="/index.html">
+                    <li id="menu_1">首页</li>
+                </a>
+                <a href="/explore.html">
+                    <li id="menu_2">精选</li>
+                </a>
+                <a href="/about.html">
+                    <li id="menu_4">关于</li>
+                </a>
+                <a class="translation-wrapper">
+                    <li class="navigation-item" onclick="i18n('CN')"> 中文(简)
+                        <img src="/images/navbar_under.png" class="arrow">
+                    </li>
+                    <div class="drop-up-wrapper">
+                        <div class="drop-up-content" onclick="i18n('UN')">
+                            <span>English(US)</span>
+                        </div>
+                    </div>
+                </a>
+            </ul>
+        </nav>
     </div>
+
+    <script>nav('3');</script>
+
+    <div class="content">
+        <div style="text-align: center">
+            <a href="/demo/clock.html">js 计时器Demo</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
