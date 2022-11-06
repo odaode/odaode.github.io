@@ -115,11 +115,11 @@
     background-size: contain;
 }
 .ancoda-mail-box .paragraphs-container .paragraph {
-    width: 1021px;
+    width: 960px;
     margin-bottom: 30px;
 }
 .ancoda-mail-box .paragraphs-container .paragraph .content {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
     margin: 0;
     padding: 0;
