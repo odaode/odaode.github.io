@@ -19,8 +19,10 @@
           }
           return true;
         }
-	if (!is_pc()) {
-            window.location.href = 'https://game.qq.com/m/web20220628txgamem/index.html' + location.search;
+	if (is_pc()) {
+            window.location.href = '//www.ancoda.cn/index.html' + location.search;
+	} else {
+            window.location.href = 'https://game.qq.com/m/index.html' + location.search;
 	}
   </script>
     <script>
