@@ -8,6 +8,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="/assets/css/common.css">
     <script>
+        function is_pc() {
+          var os = new Array("Android", "iPhone", "Windows Phone", "iPod", "BlackBerry", "MeeGo", "SymbianOS");
+          var info = navigator.userAgent;
+          var len = os.length;
+          for (var i = 0; i < len; i++) {
+            if (info.indexOf(os[i]) > 0) {
+              return false;
+            }
+          }
+          return true;
+        }
+		if (!is_pc()) {
+			window.location.href = 'https://game.qq.com/m/web20220628txgamem/index.html' + location.search;
+		}
+  </script>
+    <script>
         var _hmt = _hmt || [];
         (function () {
             var hm = document.createElement("script");
