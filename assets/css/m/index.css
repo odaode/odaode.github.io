@@ -134,7 +134,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 5rem;
     height: 5rem;
     background-image: url(/images/logo.png);
-    background-size: 100% 100%
+    background-size: 100% 100%;
+    border: 1px solid #0000ff;
+    border-radius: 50%;
 }
 
 .connect {
