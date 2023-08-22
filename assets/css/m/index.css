@@ -179,3 +179,58 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     background-image: url(/images/logo.png);
     background-size: 100% 100%
 }
+
+
+
+/*小程序下载弹窗样式*/
+.pop-rover-containe{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.4);
+}
+.pop-over{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.download-app{
+    width: 280px;
+    height: 271px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.download-app p{
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin: 0 0 3px;
+}
+.image-box{
+    margin-top: 20px;
+    width: 128px;
+    height: 128px;
+    border-radius: 5px;
+}
+.close{
+    cursor: pointer;
+    width: 100%;
+    color: #5b92e1;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    margin: 18px 0 0;
+}
+
+
