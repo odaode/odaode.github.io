@@ -213,7 +213,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 14px;
     color: #555;
     text-align: center;
-    margin: 0 0 3px;
+    margin: 50px 20px 3px;
 }
 .image-box{
     margin-top: 20px;
