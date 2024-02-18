@@ -54,9 +54,10 @@
 	   console.log("获取地址:"+ ip);
 	   getIPLocation(ip).then((result) => {
 	        if (result && result.country_name === "China") {
-		    console.log("该 IP 地址位于中国");
+		    console.log("该 IP 地址位于中国:" + ip);
 	        } else {
-		    console.log("该 IP 地址不在中国");
+		    console.log("该 IP 地址不在中国:" + ip);
+		    // window.location.href = 'https://blog.ancoda.cn/' + location.search;
 	        }
 	   });
 		
