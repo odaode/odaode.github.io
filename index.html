@@ -48,15 +48,19 @@
           return true;
         }
 	    
-	
-	
-	    
+
 	// 访问跳转判断    
 	if (is_pc()) {
+		
            // window.location.href = '//www.ancoda.cn/index' + location.search;
+		
 	   // 获取主机名（不包括端口号）
-           var ip = window.location.hostname;
-	   console.log("访问地址:"+ip);
+           var ip = "127.0.0.1";
+	   function getIP(json) {
+	        console.log("访问地址:"+json.ip);
+	      	ip = json.ip;
+	   }
+	   
            isChinaIP(ip).then((result) => {
 	     if (result) {
 	        console.log("该IP地址是中国IP");
@@ -65,10 +69,13 @@
 	        // window.location.href = 'https://blog.ancoda.cn/' + location.search;
 	     }
            });
+		
 	} else {
            window.location.href = 'https://blog.ancoda.cn/' + location.search;
 	}
     </script>
+	
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
     <script type="text/javascript" src="/assets/js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="/assets/js/common.js"></script>
     <link rel="stylesheet" href="/assets/css/index.css">
