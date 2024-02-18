@@ -45,13 +45,13 @@
            // window.location.href = '//www.ancoda.cn/index' + location.search;
 		
 	   // 获取IP
-           var ip = "113.219.24.237";
+           const ip = "113.219.24.237";
 	   function getIP(json) {
-	        console.log("访问地址:"+json.ip);
-	      	//ip = json.ip;
+	        console.log("获得地址:"+json.ip);
+	      	// ip = json.ip;
 	   }
 		
-	   console.log("获取地址:"+ ip);
+	   console.log("访问地址:"+ ip);
 	   getIPLocation(ip).then((result) => {
 	        if (result && result.country_name === "China") {
 		    console.log("该 IP 地址位于中国:" + ip);
