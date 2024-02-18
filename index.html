@@ -42,6 +42,14 @@
 	       ip = json.ip;
                console.log("访问地址: "+ ip);
 	   } 
+
+	   var language = navigator.language;
+	   console.log("访问语言: "+ language)
+	   if (language == 'zh-CN') {
+               console..log("中文网址 ")
+	   } else {
+               console..log("英文网址")
+	   }
 		
 	} else {
            window.location.href = 'https://blog.ancoda.cn/' + location.search;
