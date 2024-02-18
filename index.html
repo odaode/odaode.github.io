@@ -37,17 +37,20 @@
            // window.location.href = '//www.ancoda.cn/index' + location.search;
 	   
 	    // 获取IP
-           const userIp = "127.0.0.1";
+	   var ip = "127.0.0.1";
 	   function getIP(json) {
-	      	userIp = json.ip;
-	   }
-		
-	   console.log("访问地址:"+ userIp);
-	   console.log("访问地址:"+ userIp);
+	       ip = json.ip;
+               document.write("访问地址: ", ip);
+	   } 
 		
 	} else {
            window.location.href = 'https://blog.ancoda.cn/' + location.search;
 	}
+
+	// 获取Ip
+	function getIP(json) {
+           document.write("My public IP address is: ", json.ip);
+	} 
     </script>
 	
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
