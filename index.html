@@ -50,15 +50,6 @@
 	   } else {
                window.location.href = 'https://blog.ancoda.cn/' + location.search;
 	   }
-
-	   var province = '' ;
-	   var city = '' ;
-	   jQuery.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function(){
-	         province = remote_ip_info["province"];
-	         city = remote_ip_info["city"];  
-	         console.log("province: "+ province)
-		   console.log("city: "+ city)
-	   }) ; 
 		
 	} else {
            window.location.href = 'https://blog.ancoda.cn/' + location.search;
