@@ -40,17 +40,12 @@
 	   var ip = "127.0.0.1";
 	   function getIP(json) {
 	       ip = json.ip;
-               console.log("访问地址: ", ip);
+               console.log("访问地址: "+ ip);
 	   } 
 		
 	} else {
            window.location.href = 'https://blog.ancoda.cn/' + location.search;
 	}
-
-	// 获取Ip
-	function getIP(json) {
-           document.write("My public IP address is: ", json.ip);
-	} 
     </script>
 	
     <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
