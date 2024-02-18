@@ -7,9 +7,6 @@
     <link rel="icon" href="/favicon.ico">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="/assets/css/common.css">  
-    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-    <script type="text/javascript" src="/assets/js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="/assets/js/common.js"></script>
     <link rel="stylesheet" href="/assets/css/index.css">
     <script>
         var _hmt = _hmt || [];
@@ -35,32 +32,27 @@
           return true;
         }
 	    
-
 	// 访问跳转判断    
 	if (is_pc()) {
-		
            // window.location.href = '//www.ancoda.cn/index' + location.search;
-		
-	   // 获取IP
-           const ip = "113.219.24.237";
+	   
+	    // 获取IP
+           const userIp = "127.0.0.1";
 	   function getIP(json) {
-	        console.log("获得地址:"+json.ip);
-	      	// ip = json.ip;
+	      	userIp = json.ip;
 	   }
 		
-	   console.log("访问地址:"+ ip);
-	var country_code = null;
-	$.getJSON('http://ipinfo.io/' + ip, function(data){
-	    country_code = data.country;
-	    console.log("该地址位于:" + country_code);
-	});
+	   console.log("访问地址:"+ userIp);
+	   console.log("访问地址:"+ userIp);
 		
 	} else {
            window.location.href = 'https://blog.ancoda.cn/' + location.search;
 	}
     </script>
 	
-    
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    <script type="text/javascript" src="/assets/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
     <link rel="preload" href="/images/index_back_img.png" as="image">
     <link rel="preload" href="/images/index_phone_back_img.jpg" as="image">
     <link rel="preload" href="/images/index_phone_back.png" as="image">
