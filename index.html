@@ -18,13 +18,6 @@
     </script>
     <script>
 
-	// 这里使用了 ipgeolocationapi.com 提供的接口进行查询
-        function getIPLocation(ip) {
-	    return fetch(`https://api.ipgeolocationapi.com/geolocate/${ip}`) 
-	        .then((response) => response.json())
-	        .then((data) => data);
-	}
-	    
 	//端判断    
         function is_pc() {
           var os = new Array("Android", "iPhone", "Windows Phone", "iPod", "BlackBerry", "MeeGo", "SymbianOS");
@@ -52,14 +45,11 @@
 	   }
 		
 	   console.log("访问地址:"+ ip);
-	   getIPLocation(ip).then((result) => {
-	        if (result && result.country_name === "China") {
-		    console.log("该 IP 地址位于中国:" + ip);
-	        } else {
-		    console.log("该 IP 地址不在中国:" + ip);
-		    // window.location.href = 'https://blog.ancoda.cn/' + location.search;
-	        }
-	   });
+	var country_code = null;
+	$.getJSON('http://ipinfo.io/' + ip, function(data){
+	    country_code = data.country;
+	    console.log("该地址位于:" + country_code);
+	});
 		
 	} else {
            window.location.href = 'https://blog.ancoda.cn/' + location.search;
