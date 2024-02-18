@@ -17,23 +17,13 @@
         })();
     </script>
     <script>
-	    
-	//简单的国内IP判断    
-        function isChinaIP(ip) {
-	   return fetch(`https://api.ipify.org/?format=json`)
-	      .then((response) => response.json())
-	      .then((data) => data.origin)
-	      .then((originIP) => {
-	         if (originIP !== ip) {
-	            throw Error("Invalid origin IP address.");
-	         }
-	         
-	         const url = `http://ip-api.com/json/${ip}`;
-	         return fetch(url).then((response) => response.json());
-	      })
-	      .then((data) => data.countryCode === "CN")
-	      .catch(() => false);
-	}  
+
+	// 这里使用了 ipgeolocationapi.com 提供的接口进行查询
+        function getIPLocation(ip) {
+	    return fetch(`https://api.ipgeolocationapi.com/geolocate/${ip}`) 
+	        .then((response) => response.json())
+	        .then((data) => data);
+	}
 	    
 	//端判断    
         function is_pc() {
@@ -54,22 +44,21 @@
 		
            // window.location.href = '//www.ancoda.cn/index' + location.search;
 		
-	   // 获取主机名（不包括端口号）
+	   // 获取IP
            var ip = "113.219.24.237";
 	   function getIP(json) {
 	        console.log("访问地址:"+json.ip);
 	      	//ip = json.ip;
 	   }
-
-	    console.log("访问地址:"+ ip);
-           isChinaIP(ip).then((result) => {
-	     if (result) {
-	        console.log("该IP地址是中国IP");
-	     } else {
-	        console.log("该IP地址不是中国IP");
-	        // window.location.href = 'https://blog.ancoda.cn/' + location.search;
-	     }
-           });
+		
+	   console.log("获取地址:"+ ip);
+	   getIPLocation(ip).then((result) => {
+	        if (result && result.country_name === "China") {
+		    console.log("该 IP 地址位于中国");
+	        } else {
+		    console.log("该 IP 地址不在中国");
+	        }
+	   });
 		
 	} else {
            window.location.href = 'https://blog.ancoda.cn/' + location.search;
