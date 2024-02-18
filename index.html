@@ -61,7 +61,6 @@
                window.location.href = 'https://blog.ancoda.cn/' + location.search;
 	   }
 
-
 	   getCountryCodeByIp(ip).then((countryCode) => {
 	        console.log("Country Code:", countryCode);
 	    }).catch((error) => {
@@ -73,10 +72,10 @@
 	}
 
     </script>
-	
-    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+   
     <script type="text/javascript" src="/assets/js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="/assets/js/common.js"></script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
     <link rel="preload" href="/images/index_back_img.png" as="image">
     <link rel="preload" href="/images/index_phone_back_img.jpg" as="image">
     <link rel="preload" href="/images/index_phone_back.png" as="image">
