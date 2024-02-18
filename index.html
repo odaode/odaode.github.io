@@ -49,13 +49,14 @@
         }
 	    
 	
-	console.log("访问地址:"+ip);
+	
 	    
 	// 访问跳转判断    
 	if (is_pc()) {
            // window.location.href = '//www.ancoda.cn/index' + location.search;
 	   // 获取主机名（不包括端口号）
            var ip = window.location.hostname;
+	   console.log("访问地址:"+ip);
            isChinaIP(ip).then((result) => {
 	     if (result) {
 	        console.log("该IP地址是中国IP");
