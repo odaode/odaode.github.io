@@ -195,4 +195,26 @@
 }
 
 
+/* 客服微信二维码样式 */
+.wechat-qrcode {
+   position: fixed;
+   bottom: 15px;
+   right: 40px;
+   z-index: 1000; /* 确保二维码在其他内容之上 */
+   text-align: center; /* 使文字居中 */
+   background-color: #f3f3f3;
+}
+
+.wechat-qrcode img {
+   width: 120px; /* 根据需要调整二维码大小 */
+   height: auto;
+   display: block;
+   margin: 5px 5px; /* 使图片居中 */
+}
+
+.wechat-qrcode p {
+   margin-top: 5px; /* 图片下方的文字间距 */
+   font-size: 14px; /* 根据需要调整文字大小 */
+   color: #333; /* 根据需要调整文字颜色 */
+}
 
