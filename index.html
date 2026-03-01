@@ -18,43 +18,47 @@
         })();
     </script>
     <script>
-
-	//端判断    
+        // 端判断    
         function is_pc() {
-          var os = new Array("Android", "iPhone", "Windows Phone", "iPod", "BlackBerry", "MeeGo", "SymbianOS");
-          var info = navigator.userAgent;
-          var len = os.length;
-          for (var i = 0; i < len; i++) {
-            if (info.indexOf(os[i]) > 0) {
-              return false;
+            var os = new Array("Android", "iPhone", "Windows Phone", "iPod", "BlackBerry", "MeeGo", "SymbianOS");
+            var info = navigator.userAgent;
+            var len = os.length;
+            for (var i = 0; i < len; i++) {
+                if (info.indexOf(os[i]) > 0) {
+                    return false;
+                }
             }
-          }
-          return true;
+            return true;
         }
-	    
-	// 访问跳转判断    
-	if (is_pc()) {
-           // window.location.href = '//www.ancoda.cn/index' + location.search;
-	   
-	    // 获取IP
-	   var ip = "127.0.0.1";
-	   function getIP(json) {
-	       ip = json.ip;
-               console.log("访问地址: "+ ip);
-	   } 
 
-	   var language = navigator.language;
-	   console.log("访问语言: "+ language)
-	   if (language == 'zh-CN') {
-               window.location.href = '//www.ancoda.cn/index' + location.search;
-	   } else {
-               window.location.href = 'https://blog.ancoda.cn/' + location.search;
-	   }
-		
-	} else {
-           window.location.href = 'https://blog.ancoda.cn/' + location.search;
-	}
+        // 获取IP（仅用于记录，不参与跳转逻辑）
+        var ip = "127.0.0.1";
+        function getIP(json) {
+            ip = json.ip;
+            console.log("访问地址: " + ip);
+        }
 
+        // 修复后的访问跳转判断（避免重定向循环）
+        (function() {
+            if (is_pc()) {
+                var language = navigator.language;
+                var targetUrl;
+                if (language.toLowerCase().indexOf('zh') === 0) { // 匹配zh-CN, zh-TW等
+                    targetUrl = '//www.ancoda.cn/index';
+                } else {
+                    targetUrl = 'https://bbs.ancoda.com.cn/';
+                }
+                // 如果当前页面不是目标页面，才进行跳转
+                if (window.location.href.indexOf(targetUrl) === -1) {
+                    window.location.href = targetUrl + location.search;
+                }
+            } else {
+                targetUrl = 'https://bbs.ancoda.com.cn/';
+                if (window.location.href.indexOf(targetUrl) === -1) {
+                    window.location.href = targetUrl + location.search;
+                }
+            }
+        })();
     </script>
    
     <script type="text/javascript" src="/assets/js/jquery-2.1.4.min.js"></script>
@@ -80,7 +84,7 @@
                 <a href="/explore">
                     <li id="menu_2">精选</li>
                 </a>
-				<a href="//bbs.ancoda.com.cn" target="_blank">
+                <a href="//bbs.ancoda.com.cn" target="_blank">
                     <li id="menu_3">社区</li>
                 </a>
                 <a href="/about">
@@ -101,7 +105,7 @@
     </div>
     <script>nav('1');</script>
     <div class="video-bg">
-        <video class="my-video" autoplay="autoplay" poster="./images/index_back_img.png" muted="muted"  loop="loop" src="//dc.xhscdn.com/9379abe0-7ad8-11e9-8794-9320f6c9d557/%E8%83%8C%E6%99%AF%E8%A7%86%E9%A2%91.mp4" preload="auto">
+        <video class="my-video" autoplay="autoplay" poster="./images/index_back_img.png" muted="muted"  loop="loop" src="https://dc.xhscdn.com/9379abe0-7ad8-11e9-8794-9320f6c9d557/%E8%83%8C%E6%99%AF%E8%A7%86%E9%A2%91.mp4" preload="auto">
         </video>
     </div>
 	
@@ -111,7 +115,7 @@
                 <div class="iphone-wrapper">
                     <div class="iphone">
                         <div class="iphone-mp4">
-                            <video class="iphone-my-video" autoplay="autoplay" poster="./images/index_phone_back_img.jpg" muted="muted" loop="loop" src="//dc.xhscdn.com/a10d0710-80f1-11e9-9036-5948d2131083/new5.27.mp4" preload="auto">
+                            <video class="iphone-my-video" autoplay="autoplay" poster="./images/index_phone_back_img.jpg" muted="muted" loop="loop" src="https://dc.xhscdn.com/a10d0710-80f1-11e9-9036-5948d2131083/new5.27.mp4" preload="auto">
                             </video>
                         </div>
                         <div class="iphone-case"></div>
